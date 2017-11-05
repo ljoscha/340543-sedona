@@ -20,9 +20,9 @@ body{
 }
 
 .into{
-	min-height: 510px;
-	background-image: url(../img/into-bkg.jpg);
-	background-position: center;
+	min-height: 508px;
+	background-image: url(../img/sedona-bkg-full.jpg);
+	background-position: center -56px;
 	background-repeat: no-repeat;
 
 
