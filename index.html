@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,7 +14,7 @@
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Фото и видео</a></li>
 					<li><a href="#">Карта штата</a></li>
-					<li><a href="#">Гостиницы</a></li>
+					<li><a href="hotels.html">Гостиницы</a></li>
 				</ul>
 					<a><img width="138" height="70" class="main-header-logo" src="img/logo.png" alt="City of Sedona"></a>
 				</nav>
@@ -35,7 +36,7 @@
 	  				<p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
 	  			</div>
 	  			<div class="features-item-img">
-	  				<img width="800" height="256" src="img/features-1.jpg" alt="Картинка после первого преимущества">
+	  				<img width="800" height="401" src="img/features-1.jpg" alt="Картинка после первого преимущества">
 	  			</div>
 				
 				<div class="bonus">
@@ -54,7 +55,7 @@
 				</div>
 
 	  			<div class="features-item-img">
-	  				<img width="800" height="256" src="img/features-2.jpg" alt="Картинка перед вторым преимуществом">
+	  				<img width="800" height="400" src="img/features-2.jpg" alt="Картинка перед вторым преимуществом">
 	  			</div>
 	  			<div class="features-item">
 	  				<h2>Там есть мост дьявола</h2>
@@ -81,7 +82,24 @@
 	  				<p>укажите предполагаемые даты поездки, а мы покажем вам лучшие предложения гостиниц в седоне</p>
 	  				<h2>Поиск гостиницы в Седоне</h2>
 	  				<section class="modal modal-hotels">
-						<!-- Тут будет форма -->
+						<form  action="https://echo.htmlacademy.ru">
+							<label for="startdate">Дата заезда</label>
+							<input type="text" id="startdate" name="startdate" value="24 апреля 2017">
+							<span tabindex="-1" aria-label="Выберите дату заезда "><img src="img/calendar.svg" alt=""></span>
+							<br>
+							<label for="enddate">Дата заезда</label>
+							<input type="text" id="enddate" name="enddate" value="4 июля 2017">
+							<span tabindex="-1" aria-label="Выберите дату выезда"><img src="img/calendar.svg" alt=""></span>
+							<br>
+							<label for="adults">Взрослые</label>
+							<span tabindex="-1" aria-label="Добавить взрослого">-</span>
+							<input type="text" id="adults" name="adults" value="2">
+							<span tabindex="-1" aria-label="Убрать взрослого">+</span>
+							<label for="kids">Дети</label>
+							<span tabindex="-1" aria-label="Добавить ребенка">-</span>
+							<input type="text" id="kids" name="kids" value="0">
+							<span tabindex="-1" aria-label="Убрать ребенка">+</span>
+						</form>
 						<a href="hotels.html">Найти</a>
 	  				</section>  				
 	  			</section>
@@ -95,14 +113,14 @@
   			<b>#Visitsedona</b>
   			<div class="footer-social">
   				<ul>
-  					<li><a class="social-button" href="#.svg">Twitter</a></li>
-  					<li><a class="social-button" href="#.svg">Facebook</a></li>
-  					<li><a class="social-button" href="#.svg">Youtube</a></li>
+                    <li><a class="social-button" href="#.svg" aria-label="Twitter"></a></li>
+                    <li><a class="social-button" href="#.svg" aria-label="Facebook"></a></li>
+                    <li><a class="social-button" href="#.svg" aria-label="Youtube"></a></li>
   				</ul>
   			</div>
-  			<div class="footer-developer">
-  				<img width="115" height="41" src="img/logo-htmlacademy.svg" alt="html academy">
-  			</div>
+                <a href="https://htmlacademy.ru/intensive/htmlcss">
+                    <img width="115" height="41" src="img/logo-htmlacademy.svg" alt="html academy">
+                </a>
 	  	</footer>
 	</div>
 </body>
