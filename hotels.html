@@ -61,8 +61,10 @@
                         <fieldset>
                             <legend>Стоимость в сутки(р):</legend>
                             <div>
-                                <p>От <span tabindex="-1" aria-label="Минимальная сумма">0</span></p>
-                                <p>До <span tabindex="-1" aria-label="Максимальная сумма">3000</span></p>
+                                <label class="visually-hidden" for="filter-minamount">Минимальная цена</label>
+                                <input type="text" name="minamount" id="filter-minamount" value="От 0">
+                                <label class="visually-hidden" for="filter-maxamount" >Максимальная цена</label>
+                                <input type="text" name="maxamount" id="filter-maxamount" value="До 3000">
                                 <button class="filter-button" type="submit">Показать</button>
                             </div>
                         </fieldset>

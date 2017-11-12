@@ -80,27 +80,31 @@
 	  			<section class="main-search">
 	  				<p>Заинтересовались?</p>
 	  				<p>укажите предполагаемые даты поездки, а мы покажем вам лучшие предложения гостиниц в седоне</p>
-	  				<h2>Поиск гостиницы в Седоне</h2>
+	  				<button type="button">Поиск гостиницы в Седоне</button>
 	  				<section class="modal modal-hotels">
 						<form  action="https://echo.htmlacademy.ru" method="get">
+
 							<label for="startdate">Дата заезда</label>
 							<input type="text" id="startdate" name="startdate" value="24 апреля 2017">
-							<span tabindex="-1" aria-label="Выберите дату заезда "><img src="img/calendar.svg" alt=""></span>
-							<br>
-							<label for="enddate">Дата заезда</label>
+							<button type="button" aria-label="Выберите дату заезда "><img src="img/calendar.svg"></button>
+
+							<label for="enddate">Дата выезда</label>
 							<input type="text" id="enddate" name="enddate" value="4 июля 2017">
-							<span tabindex="-1" aria-label="Выберите дату выезда"><img src="img/calendar.svg" alt=""></span>
-							<br>
+							<button type="button" aria-label="Выберите дату выезда "><img src="img/calendar.svg"></button>
+
 							<label for="adults">Взрослые</label>
-							<span tabindex="-1" aria-label="Добавить взрослого">-</span>
+							<button type="button" aria-label="Убрать взрослого">-</button>							
 							<input type="text" id="adults" name="adults" value="2">
-							<span tabindex="-1" aria-label="Убрать взрослого">+</span>
+							<button type="button" aria-label="Добавить взрослого">+</button>							
+
 							<label for="kids">Дети</label>
-							<span tabindex="-1" aria-label="Добавить ребенка">-</span>
+							<button type="button" aria-label="Убрать ребенка">-</button>
 							<input type="text" id="kids" name="kids" value="0">
-							<span tabindex="-1" aria-label="Убрать ребенка">+</span>
-						</form>
-						<a href="hotels.html">Найти</a>
+							<button type="button" aria-label="Добавить ребенка">+</button>
+							
+							<input type="submit" aria-label="Найти" value="Найти">
+
+						</form>						
 	  				</section>  				
 	  			</section>
 	  			<section class="main-map">
