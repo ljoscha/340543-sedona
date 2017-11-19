@@ -39,7 +39,7 @@ a {
 }
 
 .site-navigation a:active {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .site-navigation .active,
@@ -53,6 +53,10 @@ a {
   background-color: #3f4d50;
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
+}
+
+.features-description {
+  background-color: #ffffff;
 }
 
 .features-description p:first-child {
@@ -70,24 +74,16 @@ a {
   // color: #333333;
 }
 
-.features-item {
+.line-blue {
+  background-color: #81b3d2;
+}
+
+.line-blue .features-item {
   text-align: center;
-
-  background-color: #8db5cf;
-}
-
-.features-item h2 {
-  font-weight: bold;
-  font-size: 21px;
-  // line-height: 21px;
   color: #ffffff;
 }
 
-.features-item p {
-  color: #ffffff;
-}
-
-.bonus {
+.bonus-line {
   text-align: center;
 
   background-color: #fefefe;
@@ -113,6 +109,22 @@ a {
   background-image: url(..//img/gift.svg);
   background-repeat: no-repeat;
   background-position: top center;
+}
+
+.line-gray {
+  background-color: #eeeeee;
+}
+
+.line-gray .features-item {
+  text-align: center;
+}
+
+.line-gray h2 {
+  color: #000000;
+}
+
+.main-search {
+  background-color: #ffffff;
 }
 
 .main-search p:first-child {
@@ -143,7 +155,7 @@ a {
 }
 
 .main-search .button:active {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.3);
 
   background-color: #503e33;
 }
@@ -192,9 +204,13 @@ a {
 }
 
 .main-search input[type="submit"]:active {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.3);
 
   background-color: #5496bd;
+}
+
+.main-footer {
+  background-color: #ffffff;
 }
 
 .main-footer b {
@@ -219,7 +235,7 @@ a {
 .social-button:active {
   background-color: #5496bd;
 
-  fill: rgba(255, 255, 255, 0.5);
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .main-footer p {
@@ -238,7 +254,6 @@ a {
 .footer-developer:active {
   fill: #bdbbbc;
 }
-
 
 .hotels-filter {
   color: #ffffff;
