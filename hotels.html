@@ -17,9 +17,7 @@
                     <li><a href="#">Карта  штата</a></li>
                     <li><a class="active">Гостиницы</a></li>
                 </ul>
-                <div class="main-logo">
-                    <a href="index.html"><img width="138" height="70" class="main-header-logo" src="img/logo.png" alt="City of Sedona"></a>
-                </div>
+                    <a href="index.html" class="main-logo"><img width="138" height="70" class="main-header-logo" src="img/logo.png" alt="City of Sedona"></a>
             </nav>
         </header>
 
@@ -44,8 +42,8 @@
                                 </li>
                             </ul>
                         </fieldset>
-                        <fieldset>
-                            <legend class="filter-appartment">Тип жилья:</legend>
+                        <fieldset class="filter-appartment">
+                            <legend>Тип жилья:</legend>
                             <ul>
                                 <li class="filter-option">
                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
@@ -63,17 +61,24 @@
                         </fieldset>
                         <fieldset class="filter-amount">
                             <legend>Стоимость в сутки(р):</legend>
-                            <div>
-                                <label class="visually-hidden" for="filter-minamount">Минимальная цена</label>
-                                <input type="text" name="minamount" id="filter-minamount" value="От 0">
-                                <label class="visually-hidden" for="filter-maxamount" >Максимальная цена</label>
-                                <input type="text" name="maxamount" id="filter-maxamount" value="До 3000">
-                                <button class="filter-button" type="submit">Показать</button>
-                            </div>
+                                <div class="filter-rang">
+                                    <div class="price-controls">
+                                        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                                        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                                    </div>
+                                    <div class="range-controls">
+                                        <div class="scale">
+                                          <div class="bar"></div>
+                                      </div>
+                                      <div class="range-toggle range-toggle-min"></div>
+                                      <div class="range-toggle range-toggle-max"></div>
+                                    </div>
+                                        <button class="btn-transparent" type="submit">Показать</button>
+                                </div>
                         </fieldset>
                     </form>
             </section>
-            <!-- <h2 class="visually-hidden">Список отелей</h2>       -->
+            <h2 class="visually-hidden">Список отелей</h2>      
             <section class="sorting">
                 <p>Найдено: 3</p>
                 <span>Сортировка:</span>
@@ -99,11 +104,9 @@
             <ul class="catalog-list">
 
                 <li class="catalog-item">
-                    <div class="catalog-item-img">
                         <a href="catalog-item.html">
                             <img width="135" height="90" src="img/hotel-1.jpg" alt="Amara Resort &amp; Spa">
                         </a>
-                    </div>
                     <div class="catalog-item-info">
                         <h3><a href="catalog-item.html">Amara Resort &amp; Spa</a></h3>
                         <div class="catalog-item-description">
@@ -124,11 +127,9 @@
                 </li>
 
                 <li class="catalog-item">
-                    <div class="catalog-item-img">
                         <a href="catalog-item.html">
                             <img width="135" height="90" src="img/hotel-2.jpg" alt="Desert Quail Inn">
                         </a>
-                    </div>
                     <div class="catalog-item-info">
                         <h3><a href="catalog-item.html">Desert Quail Inn</a></h3>
                         <div class="catalog-item-description">
@@ -149,11 +150,9 @@
                 </li>
 
                 <li class="catalog-item">
-                    <div class="catalog-item-img">
                         <a href="catalog-item.html">
                             <img width="135" height="90" src="img/hotel-3.jpg" alt="Villas at Poco Diablo">
                         </a>
-                    </div>
                     <div class="catalog-item-info">
                         <h3><a href="catalog-item.html">Villas at Poco Diablo</a></h3>
                         <div class="catalog-item-description">
