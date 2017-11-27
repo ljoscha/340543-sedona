@@ -19,12 +19,11 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   color: #333333;
   text-transform: uppercase;
+  /*background: url(../img/sedona-index-1200.jpg) center top no-repeat;*/
 
+  /*background: url(../img/sedona-hotels-1200.jpg) center top no-repeat;*/
   background-color: #f2f2f2;
-    /*background: url(../img/sedona-index-1200.jpg) center top no-repeat;*/
-    /*background: url(../img/sedona-hotels-1200.jpg) center top no-repeat; */
- 
-  /*opacity: 0.5; */
+  /*opacity: 0.5;*/
 }
 
 a {
@@ -44,16 +43,17 @@ input[type="radio"].visually-hidden {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  overflow: hidden;
 
   white-space: nowrap;
 
-  -webkit-clip-path: inset(100%);
+  border: 0;
 
-          clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;
+          clip-path: inset(100%);
+
+  -webkit-clip-path: inset(100%);
 }
 
 .main-navigation {
@@ -89,9 +89,12 @@ input[type="radio"].visually-hidden {
 }
 
 .into {
-  background-color: #3f4d50;
+  /*  background-color: #3f4d50;
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: center -55px;*/
+  background: #3f4d50 url(../img/background.jpg) no-repeat center -55px;
 }
 
 .features-description {
@@ -356,6 +359,7 @@ input[type="radio"].visually-hidden {
   background-color: #3f4d50;
   background-image: url(../img/background-blur.jpg);
   background-repeat: no-repeat;
+  background-position: center 20%;
 }
 
 .hotels-filter legend {
@@ -369,7 +373,7 @@ input[type="radio"].visually-hidden {
 
 .filter input[type="text"] {
   font: inherit;
-  text-align: center;
+  text-align: left;
   color: #ffffff;
 
   background-color: transparent;
@@ -595,9 +599,6 @@ input[type="radio"].visually-hidden {
 
   min-height: 509px;
   padding-top: 76px;
-
-  background-repeat: no-repeat;
-  background-position: center -55px;
 }
 
 .into img {
@@ -714,6 +715,21 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 
   -ms-flex-preferred-size: 66.666%;
+}
+
+.features-item-img {
+  display: -webkit-flex;
+  display:    -moz-flex;
+  display:     -ms-flex;
+  display:      -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
 }
 
 .features-item-img img {
@@ -977,14 +993,14 @@ button.add-btn:active::before {
 
 
 .main-map {
-  min-height: 593px;
+  min-height: 586px;
+  overflow: hidden;
 
   background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
           background-size: cover;
-          overflow: hidden;
 }
 
 .main-map img {
@@ -1116,65 +1132,70 @@ button.add-btn:active::before {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
+  min-height: 218px;
   padding: 0 6%;
   padding-top: 28px;
   padding-bottom: 22px;
-  min-height: 218px;
 }
 
-.filter fieldset{
+.filter fieldset {
   border: none;
 }
 
 .filter-infrastructure {
   -webkit-flex-basis: 22.7%;
           flex-basis: 22.7%;
+  padding-left: 0;
 
   -ms-flex-preferred-size: 22.7%;
-  padding-left: 0;
 }
 
-.filter-infrastructure ul{
+.filter-infrastructure ul {
   margin: 0;
   margin-top: 20px;
   padding: 0;
 }
 
-.filter-infrastructure li{
+.filter-infrastructure li {
   margin-bottom: 25px;
 }
 
-.filter-infrastructure li:last-child{
+.filter-infrastructure li:last-child {
   margin-bottom: 0;
 }
 
-.filter-infrastructure label{
+.filter-infrastructure label {
   position: relative;
+
   padding-left: 37px;
+
   cursor: pointer;
 }
 
-.filter-infrastructure label:before{
-  content: '';
-  display: block;
+.filter-infrastructure label:before {
+  content: "";
   position: absolute;
   left: 0;
-  vertical-align: middle;
+
+  display: block;
   width: 30px;
   height: 30px;
+
+  vertical-align: middle;
+
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
 }
 
-.filter-infrastructure input:checked + label:before{
+.filter-infrastructure input:checked + label:before {
   background-image: url("../img/checkbox-on.svg");
 }
 
-.filter-infrastructure input:disabled + label:before{
+.filter-infrastructure input:disabled + label:before {
   opacity: 0.5;
 }
 
-.filter-infrastructure input:disabled + label{
+.filter-infrastructure input:disabled + label {
   opacity: 0.5;
 }
 
@@ -1188,66 +1209,71 @@ button.add-btn:active::before {
   -ms-flex-preferred-size: 22.7%;
 }
 
-.filter-appartment ul{
+.filter-appartment ul {
   margin: 0;
   margin-top: 20px;
   padding: 0;
 }
 
-.filter-appartment li{
+.filter-appartment li {
   margin-bottom: 25px;
 }
 
-.filter-appartment li:last-child{
+.filter-appartment li:last-child {
   margin-bottom: 0;
 }
 
-.filter-appartment label{
+.filter-appartment label {
   position: relative;
+
   padding-left: 40px;
+
   cursor: pointer;
 }
 
-.filter-appartment label:before{
-  content: '';
-  display: block;
+.filter-appartment label:before {
+  content: "";
   position: absolute;
   left: 0;
-  vertical-align: middle;
+
+  display: block;
   width: 30px;
   height: 30px;
+
+  vertical-align: middle;
+
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
 }
 
-.filter-appartment input:checked + label:before{
+.filter-appartment input:checked + label:before {
   background-image: url("../img/checkbox-on.svg");
 }
 
-.filter-appartment input:disabled + label:before{
+.filter-appartment input:disabled + label:before {
   opacity: 0.5;
 }
 
-.filter-appartment input:disabled + label{
+.filter-appartment input:disabled + label {
   opacity: 0.5;
 }
 
 .filter-amount {
   -webkit-flex-basis: 30%;
           flex-basis: 30%;
+  margin: 0;
   margin-left: auto;
+  margin-left: auto;
+  padding: 0;
 
   -ms-flex-preferred-size: 30%;
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
 }
-.filter-amount legend{
-  padding-left: 3px;
+.filter-amount legend {
   margin-bottom: 9px;
+  padding-left: 3px;
 }
 
-.filter-rang{
+.filter-rang {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   width: 318px;
@@ -1256,6 +1282,7 @@ button.add-btn:active::before {
 
 .price-controls {
   position: relative;
+
   height: 32px;
   margin-bottom: 20px;
 
@@ -1290,7 +1317,7 @@ button.add-btn:active::before {
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
+  width: 78px;
   padding-left: 65px;
 }
 
@@ -1299,8 +1326,8 @@ button.add-btn:active::before {
   width: 50px;
   margin: 0;
 
-  color: inherit;
   font: inherit;
+  color: inherit;
 
   background: none;
   border: none;
@@ -1309,7 +1336,7 @@ button.add-btn:active::before {
 .range-controls {
   position: relative;
 
-  margin-bottom: 32px;
+  margin-bottom: 33px;
 }
 
 .range-controls .scale {
@@ -1351,11 +1378,12 @@ button.add-btn:active::before {
 
 .btn-transparent {
   display: block;
-  margin: 0 auto;
-  padding: 6px 40px;
+  margin-left: 84px;
+  padding: 6px 34px;
 
   font-size: 14px;
   line-height: 20px;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
 
@@ -1384,10 +1412,29 @@ button.add-btn:active::before {
   display:         flex;
   -webkit-align-items: center;
           align-items: center;
+  min-height: 86px;
   padding: 0 6%;
 
   -webkit-box-align: center;
   -ms-flex-align: center;
+}
+
+.sorting p {
+  margin: 0;
+  margin-top: -3px;
+}
+
+.sorting span {
+  display: block;
+  margin-top: 3px;
+  margin-left: 47px;
+}
+
+.sorting .type-sorting {
+  margin: 0;
+  margin-top: 2px;
+  margin-left: 41px;
+  padding: 0;
 }
 
 .type-sorting {
@@ -1397,13 +1444,32 @@ button.add-btn:active::before {
   display:         flex;
 }
 
+.type-sorting li {
+  margin-right: 32px;
+}
+
+.type-sorting li:last-child {
+  margin-right: 0;
+}
+
 .direction-sorting {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
+  margin: 0;
+  margin-top: 3px;
   margin-left: auto;
+  margin-left: auto;
+  padding: 0;
 }
+
+.direction-sorting li {
+  margin-left: 13px;
+}
+
+
+
 
 .catalog-list {
   display: -webkit-box;
@@ -1414,7 +1480,7 @@ button.add-btn:active::before {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0;
-  padding: 0 6%;
+  padding: 0;
 
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
@@ -1425,13 +1491,115 @@ button.add-btn:active::before {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  min-height: 151px;
+  padding: 0  6%;
+
+  border-top: 1px solid #e5e5e5;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
 }
+
+.catalog-item:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.catalog-item > a {
+  margin-top: 5px;
+}
+
+.catalog-item-info {
+  min-height: 104px;
+  margin-left: 30px;
+}
+
+.catalog-item-info h3 {
+  margin: 0;
+  margin-bottom: 9px;
+}
+
+.catalog-item-description .btn {
+  display: block;
+  margin-top: 14px;
+  padding: 3px 16px;
+  padding-left: 17px;
+}
+
+
 
 .catalog-item-description {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
+}
+
+.catalog-item-description span {
+  display: block;
+  margin-right: 10px;
+}
+
+.catalog-item-type {
+  margin: 0;
+  margin-right: 6px;
+}
+
+.catalog-item-price {
+  margin: 0;
+}
+
+.catalog-item-rating {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+  min-height: 90px;
+
+  -webkit-box-align: end;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: justify;
+  -ms-flex-align: end;
+  -ms-flex-pack: justify;
+}
+
+.catalog-item-rating {
+  font-size: 0;
+}
+
+.catalog-item-rating span.star {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
+
+  vertical-align: top;
+
+  background-image: url(../img/star.svg);
+  background-repeat: no-repeat;
+  background-position: 2px -1px;
+}
+
+.catalog-item-rating p {
+  margin: 0;
+}
+
+.catalog-item-rating .rating {
+  display: block;
+  padding: 4px 14px;
+
+  font-size: 14px;
+
+  background-color: #f2f2f2;
 }
 
 .catalog-item-rating {
