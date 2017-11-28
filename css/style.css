@@ -23,7 +23,11 @@ body {
 
   /*background: url(../img/sedona-hotels-1200.jpg) center top no-repeat;*/
   background-color: #f2f2f2;
-  /*opacity: 0.5;*/
+
+    /*background: url(../img/sedona-index-1200.jpg) center top no-repeat;*/
+    background: url(../img/sedona-hotels-1200.jpg) center top no-repeat; 
+ 
+  opacity: 0.5; 
 }
 
 a {
@@ -89,11 +93,13 @@ input[type="radio"].visually-hidden {
 }
 
 .into {
-  /*  background-color: #3f4d50;
+
+/*  background-color: #3f4d50;
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
   background-repeat: no-repeat;
   background-position: center -55px;*/
+
   background: #3f4d50 url(../img/background.jpg) no-repeat center -55px;
 }
 
@@ -730,7 +736,6 @@ input[type="radio"].visually-hidden {
 
   -webkit-box-align: center;
   -ms-flex-align: center;
-}
 
 .features-item-img img {
   vertical-align: bottom;
@@ -994,7 +999,6 @@ button.add-btn:active::before {
 
 .main-map {
   min-height: 586px;
-  overflow: hidden;
 
   background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
@@ -1380,7 +1384,6 @@ button.add-btn:active::before {
   display: block;
   margin-left: 84px;
   padding: 6px 34px;
-
   font-size: 14px;
   line-height: 20px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1417,6 +1420,25 @@ button.add-btn:active::before {
 
   -webkit-box-align: center;
   -ms-flex-align: center;
+  min-height: 86px;
+}
+
+.sorting p{
+  margin: 0;
+  margin-top: -3px;
+}
+
+.sorting span{
+  display: block;
+  margin-left: 47px;
+    margin-top: 3px;
+}
+
+.sorting .type-sorting{
+  margin: 0;
+    padding: 0;
+    margin-left: 41px;
+    margin-top: 2px;
 }
 
 .sorting p {
@@ -1449,6 +1471,13 @@ button.add-btn:active::before {
 }
 
 .type-sorting li:last-child {
+
+.type-sorting li{
+  margin-right: 32px;
+}
+
+.type-sorting li:last-child{
+
   margin-right: 0;
 }
 
@@ -1465,6 +1494,14 @@ button.add-btn:active::before {
 }
 
 .direction-sorting li {
+
+      margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-top: 3px;
+}
+
+.direction-sorting li{
   margin-left: 13px;
 }
 
@@ -1504,6 +1541,42 @@ button.add-btn:active::before {
 
 .catalog-item:last-child {
   border-bottom: 1px solid #e5e5e5;
+  min-height: 151px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #e5e5e5;
+  padding: 0  6%;
+}
+
+.catalog-item:last-child{
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.catalog-item > a{
+  margin-top: 5px;
+}
+
+.catalog-item-info{
+  min-height: 104px;
+  margin-left: 30px
+}
+
+.catalog-item-info h3{
+  margin: 0;
+  margin-bottom: 9px;
+}
+
+.catalog-item-description .btn{
+    padding: 3px 16px;
+    padding-left: 17px;
+    margin-top: 14px;
+    display: block;
+}
+
+.catalog-item-description .read-more-btn{
+
 }
 
 .catalog-item > a {
@@ -1542,9 +1615,16 @@ button.add-btn:active::before {
 }
 
 .catalog-item-type {
+
+  margin-right: 10px
+}
+
+.catalog-item-type{
+
   margin: 0;
   margin-right: 6px;
 }
+
 
 .catalog-item-price {
   margin: 0;
@@ -1602,6 +1682,59 @@ button.add-btn:active::before {
   background-color: #f2f2f2;
 }
 
+.catalog-item-price{
+  margin: 0;
+}
+
+.catalog-item-rating{
+  min-height: 90px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+
+}
+
+.catalog-item-rating{
+  font-size: 0px;
+}
+
+.catalog-item-rating span.star{
+  display: inline-block;
+  vertical-align: top;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/star.svg);
+  background-repeat: no-repeat;
+  background-position: 2px -1px;
+  margin-left: 4px;
+}
+
+.catalog-item-rating p{
+  margin: 0;
+}
+
+.catalog-item-rating .rating{
+  display: block;
+  padding: 4px 14px;
+  background-color: #f2f2f2;
+  font-size: 14px;
+}
+
 .catalog-item-rating {
   margin-left: auto;
 }
+}}
