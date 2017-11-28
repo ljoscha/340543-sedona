@@ -19,10 +19,9 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   color: #333333;
   text-transform: uppercase;
-  /*background: url(../img/sedona-index-1200.jpg) center top no-repeat;*/
-
-  /*background: url(../img/sedona-hotels-1200.jpg) center top no-repeat;*/
   background-color: #f2f2f2;
+  /*background: url(../img/sedona-index-1200.jpg) center top no-repeat;*/
+  /*background: url(../img/sedona-hotels-1200.jpg) center top no-repeat;*/
   /*opacity: 0.5;*/
 }
 
