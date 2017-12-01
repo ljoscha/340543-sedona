@@ -845,9 +845,7 @@ input[type="radio"].visually-hidden {
 }
 
 .hotels-form input[name*="date"] {
-  /*width: 347px;*/
   width: 100%;
-  /*display: inline-block;*/
 }
 
 .hotels-form input[name="kids"],
@@ -936,11 +934,11 @@ input[type="radio"].visually-hidden {
   background-color: #a9a9a9;
 }
 
-button.subtract-btn:hover::before {
+.people-wrapper button.subtract-btn:hover::before {
   background: #000000;
 }
 
-button.subtract-btn:active::before {
+.people-wrapper button.subtract-btn:active::before {
   background: #81b3d2;
 }
 
@@ -991,13 +989,13 @@ button.subtract-btn:active::before {
           transform: rotate(90deg);
 }
 
-button.add-btn:hover::after,
-button.add-btn:hover::before {
+.people-wrapper button.add-btn:hover::after,
+.people-wrapper button.add-btn:hover::before {
   background: #000000;
 }
 
-button.add-btn:active::after,
-button.add-btn:active::before {
+.people-wrapper button.add-btn:active::after,
+.people-wrapper button.add-btn:active::before {
   background: #81b3d2;
 }
 .main-map {
@@ -1011,11 +1009,9 @@ button.add-btn:active::before {
           background-size: cover;
 }
 
-.main-map img {
+.main-map .google-map{
+  border: 0;
   max-width: 100%;
-  height: auto;
-
-  vertical-align: bottom;
 }
 
 .main-footer {
@@ -1354,6 +1350,7 @@ button.add-btn:active::before {
   display: inline-block;
   width: 56%;
   margin: 0;
+  vertical-align: baseline;
 
   font: inherit;
   color: inherit;

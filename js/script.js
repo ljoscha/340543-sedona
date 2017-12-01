@@ -1,16 +1,9 @@
-// var modal = document.querySelector("#modal");
-// var btn = document.querySelector("#modal-btn");
-
-
-// btn.addEventListener("click", function (evt) {
-//  evt.preventDefault();
-//  modal.classList.toggle("modal-hotels-hide");
-//  });
-
-
 var modal = document.querySelector("#modal");
 var btn = document.querySelector("#modal-btn");
-
+var form = modal.querySelector("form");
+var startdate = modal.querySelector("[name=startdate]");
+var enddate = modal.querySelector("[name=enddate]");
+var adults = modal.querySelector("[name=adults]");
 
 btn.addEventListener("click", function (evt) {
  evt.preventDefault();
@@ -23,3 +16,10 @@ btn.addEventListener("click", function (evt) {
 		modal.classList.remove("modal-hotels-show");
 	}
  });
+
+form.addEventListener("submit", function(evt){
+	if (!startdate.value || !enddate.value || !adults.value) {
+		evt.preventDefault();
+		alert("Проверьте правильность введеных параметров")
+	}
+});
