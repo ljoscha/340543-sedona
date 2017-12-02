@@ -1,25 +1,33 @@
-var modal = document.querySelector("#modal");
-var btn = document.querySelector("#modal-btn");
-var form = modal.querySelector("form");
-var startdate = modal.querySelector("[name=startdate]");
-var enddate = modal.querySelector("[name=enddate]");
-var adults = modal.querySelector("[name=adults]");
+var mainsearch = document.querySelector(".main-search");
+var modalhotels = document.querySelector(".modal-hotels");
+var form = modalhotels.querySelector("form");
+var startdate = modalhotels.querySelector("[name=startdate]");
+var enddate = modalhotels.querySelector("[name=enddate]");
+var adults = modalhotels.querySelector("[name=adults]");
 
-btn.addEventListener("click", function (evt) {
- evt.preventDefault();
- if	(modal.classList.contains("modal-hotels-hide")){
-   	modal.classList.remove("modal-hotels-hide");
- 	modal.classList.add("modal-hotels-show");
- 	}
-	else {
-		modal.classList.add("modal-hotels-hide");
-		modal.classList.remove("modal-hotels-show");
-	}
- });
+
+if (modalhotels) {
+  modalhotels.classList.add("js-form-close");
+}
+
+if (mainsearch) {
+  mainsearch.addEventListener("click", function(evt) {
+  	form.classList.remove("modal-error");
+    var target = evt.target;
+
+    if (target.classList.contains("button")) {
+      event.preventDefault();
+      modalhotels.classList.toggle("js-form-close");
+      modalhotels.classList.toggle("js-form-show");
+    }
+  });
+}
 
 form.addEventListener("submit", function(evt){
 	if (!startdate.value || !enddate.value || !adults.value) {
 		evt.preventDefault();
-		alert("Проверьте правильность введеных параметров")
+		form.classList.remove("modal-error");
+      	form.offsetWidth = form.offsetWidth;
+		form.classList.add("modal-error");
 	}
 });
