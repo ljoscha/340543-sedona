@@ -16,7 +16,7 @@ if (mainsearch) {
     var target = evt.target;
 
     if (target.classList.contains("button")) {
-      event.preventDefault();
+      evt.preventDefault();
       modalhotels.classList.toggle("js-form-close");
       modalhotels.classList.toggle("js-form-show");
     }
