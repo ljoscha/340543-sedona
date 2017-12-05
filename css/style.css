@@ -881,12 +881,9 @@ img {
 }
 
 .modal-hotels .hotels-form {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: -webkit-flex; 
   display: flex;
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
@@ -1093,7 +1090,6 @@ img {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-
   -webkit-justify-content: center;
          -webkit-box-pack: center;
             -ms-flex-pack: center;
@@ -1103,9 +1099,6 @@ img {
        -ms-flex-align: stretch;
           align-items: stretch;
   padding: 36px 0;
-
-
-
 }
 
 .index .main-footer {
@@ -1120,12 +1113,9 @@ img {
 }
 
 .footer-hash {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: -webkit-flex; 
   display: flex;
   -ms-flex-preferred-size: 33.333333%;
        -webkit-flex-basis: 33.333333%;
@@ -1138,12 +1128,9 @@ img {
 }
 
 .footer-social {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: -webkit-flex; 
   display: flex;
   -ms-flex-preferred-size: 33.333333%;
        -webkit-flex-basis: 33.333333%;
@@ -1151,13 +1138,10 @@ img {
 }
 
 .footer-social-list {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display:         flex;
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: -webkit-flex; 
+  display: flex;
   -webkit-justify-content: center;
          -webkit-box-pack: center;
             -ms-flex-pack: center;
@@ -1177,12 +1161,9 @@ img {
 }
 
 .footer-developer {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: -webkit-flex; 
   display: flex;
   -ms-flex-preferred-size: 33.333333%;
        -webkit-flex-basis: 33.333333%;
@@ -1446,11 +1427,15 @@ img {
 .price-controls .min-price {
   width: 28.5%;
   padding-left: 20.44025157232704%;
+
+  line-height: 21px;
 }
 
 .price-controls .max-price {
   width: 28.5%;
   padding-left: 17%;
+
+  line-height: 21px;
 }
 
 .price-controls input {
